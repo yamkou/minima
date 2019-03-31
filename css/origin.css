@@ -603,4 +603,7 @@ nav .title, .gnavi, .snavi {
   .wrap {
     margin-right: 12em;
   }
+  .r-link {
+    display: none;
+  }
 }
