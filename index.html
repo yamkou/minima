@@ -119,14 +119,14 @@
             <section class="container">
                 <hr class="clr p2" />
                 <h2>有機的な機能を最小限に。</h2>
-                <p>サイト作成で欠かせない有機的な機能を取捨選択しcssをデザインしました。<br />
+                <p>サイト作成で欠かせない有機的な機能を取捨選択しcssをデザイン。<br />
 javascriptなしでも機能する多階層ナビゲーションと最新デザインのドロワーメニュー。様々なデバイスにも対応した変則的な可変レスポンシブ機能。</p>
                 <hr class="clr p1" />
                 <h3>美徳から外れる無駄コード。美しくない。</h3>
                 <p>例えば、font-sizeやfont-familyなどをinherit（継承）すると最新のモダンブラウザでもinheritの親要素の認識障害で高さがそろわないような現象が発生します。 その高さをそろえようと「display」「vertical-align」「height」「line-height」「box-sizing」など無駄コード連発hackで帳尻を合わせたり、リセットやノーマライズcssでとりあえず満足したり。 ミニマリストとして、それは見過ごせない。</p>
                 <hr class="clr p1" />
                 <h3>超精彩SVG</h3>
-                <p>機能拡張用のCSSを読み込むことで、さらなる恩恵がもたらされる事でしょう。
+                <p>機能拡張用のCSSを読み込むことで、さらなる恩恵が！
 機能拡張用のアイコンに使用している画像は、超精彩な高密度のベクター画像フォーマットSVG。こちらをGUI環境から複数の画像を圧縮し、Base64に変換で画像の読み込み時間0秒。</p>
 
             </section>
@@ -136,6 +136,7 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
             <h3 id="font">Font</h3>
             <h4 class="muted">Headings</h4>
 
+		<span class="bold sm">文字の強調（ワードプレスの場合、管理画面で調整するとstyle属性が重複し可読性が落ちて冗長的なる）</span>
             <p><span class="h1">.h1</span> <span class="h2">.h2</span> <span class="h3">.h3</span> <span class="h4">.h4</span> <span class="h5">.h5</span> <span class="h6">.h6</span></p>
             <pre class="bg-light">
 <code>
@@ -149,6 +150,7 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
 &lt;/p&gt;</code>
 </pre>
             <h4 class="muted">Text</h4>
+		<span class="bold sm">文字の装飾（ワードプレスの場合、管理画面で調整するとstyle属性が重複し可読性が落ちて冗長的なる）</span>
             <ul class="p0">
                 <li><span class="lg bold">あいうえお　かきくけこ　さしすせそ　たちつてと</span></li>
                 <li><span class="sm bold">あいうえお　かきくけこ　さしすせそ　たちつてと</span></li>
@@ -191,6 +193,7 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
 </pre>
             <hr class="p2 clr" />
             <h4 class="muted" id="mpe">Margin & Padding & etc...</h4>
+		<span class="bold sm">文字・画像の位置調整（ワードプレスの場合、管理画面で調整するとstyle属性が重複し可読性が落ちて冗長的なる）</span>
             <pre class="bg-light">
 <code>.m0{margin:0}
 .m1{margin:1em}
@@ -210,7 +213,7 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
 </pre>
             <hr class="clr p2" />
             <h4 class="muted" id="hr">Hr <small class="dark">水平方向の罫線＋clearfix</small></h4>
-<span class="bold sm">カラム落ちを防ぐ目的で使用</span><br>
+<span class="bold sm">カラム落ちや文字・画像の回り込みなどOSブラウザでの不具合を防ぐ目的で使用</span><br>
             <pre class="bg-light">
 &lt;div&#032;style&#061;&quot;float:left&quot;&gt;
 …
@@ -458,12 +461,12 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
             <h3>Media Objects</h3>
             <p class="bold sm">画像とテキスト　<span class="mid">サンプル画像</span></p>
             <div class="media">
-                <a href="#"><img class="media-figure" height="120" src="https://placehold.it/120x120?text=minima!" width="120"></a>
+                <a href="#"><!-- <img class="media-figure" height="120" src="https://via.placeholder.com/120x120.png?text=minima" width="120" /> --><div class="media-figure bg-mid" style="width:120px;height:120px;"></div></a>
                 <div class="media-body">
-                    <h4 class="m0">Media heading</h4>
-                    <p>Tajōmaru, a notorious brigand, claims that he tricked the samurai to step off the mountain trail with him and look at a cache of ancient swords he discovered. In the grove he tied the samurai to a tree, then brought the samurai's wife there. She initially tried to defend herself with a dagger, but was eventually "seduced" by the bandit. The woman, filled with shame, then begged him to duel to the death with her husband, to save her from the guilt and shame of having two men know her dishonor. Tajōmaru honorably set the samurai free and dueled with him.</p>
+                    <h4 class="m0">左の画像の大きさ</h4>
+                    <p>画像の大きさは指定していないため、任意で調整が可能。<br />親子関係を保ったまま、可読性を維持しつつレスポンシブにも柔軟に対応しています。尚、文字数が少ない場合、子の位置が切れ上がってくる時には<span class="sm bold">&lt;hr class="clr p1" /&gt;</span>とおまじないをするとよいかも。</p><!-- <hr class="clr p1"/> -->
                     <div class="media">
-                        <img class="media-figure" height="120" src="https://placehold.it/120x120?text=minima!" width="120">
+                <a href="#"><!-- <img class="media-figure" height="120" src="https://via.placeholder.com/120x120.png?text=minima" width="120" /> --><div class="media-figure bg-green" style="width:120px;height:120px;"></div></a>
                         <div class="media-body">
                             <h4 class="m0">Media heading</h4>
                             <p> In Tajōmaru's recollection they fought skillfully and fiercely, but in the end Tajōmaru was the victor and the woman ran away. At the end of the story to the court, he is asked about an expensive dagger owned by the samurai's wife: he says that, in the confusion, he forgot all about it, and that it was foolish of him to leave behind such a valuable object.</p>
@@ -493,8 +496,8 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
             <section class="container" id="blockquote">
                 <h3>Blockquote</h3>
                 <p class="sm bold">引用や抜粋、転載文など</p>
-                <blockquote>You are always gonna be the one and you should know How I wish I could have never let you go Come into my life again Oh, don't say no You are always gonna be the one in my life So true, I believe I can never find Somebody like you
-                    <cite><a href="https://youtu.be/o1sUaVJUeB0" rel="nofollow" target="_blank">Hikaru Utada</a></cite></blockquote>
+                <blockquote class="h5 mb2 bold"><span class="bold">AMP対応について<br />容易に管理更新できるCMS「ワードプレス」ではAMPに対応したプラグインもありますが、その場合は、50KB制限があるので、デザインを犠牲にすることとなるでしょう。また、決められたスクリプトしか使用できないといった制限もあります。ですがこちらのテンプレートでは、<span class="bold mkr_3">javascriptにも依存していませんし、CSSimportantも画像も使用していません</span>拡張機能とベースのcssも多様な要望に合わせて切り分けています。合算しても17KB以下。<br />CSSコードを1000桁追加でぶっこんでも余裕で対策できるでしょう。外部読み込みがないので表示速度も速いけどcacheを用いるAMPには関係ないかな。
+                    <cite><a href="https://wordpress.com/ja/" rel="nofollow" target="_blank">WordPress</a></cite></blockquote>
                 <pre class="bg-white"><code>&lt;blockquote&gt;…
   &lt;cite&gt;&lt;a href="#" target="_blank" rel="nofollow"&gt;AAA&lt;/a&gt;&lt;/cite&gt;
 &lt;/blockquote&gt;</code>
@@ -505,40 +508,35 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
             <section class="container" id="tables">
                 <h3>Tables</h3>
                 <p class="sm bold">段組テーブルレイアウト</p> 
-　　　　　　　　<p class="sm bold text-right">2018/8/10調べ</p>
+　　　　　　　　<p class="sm bold text-right">20XX/XX/XX</p>
                 <table>
                     <thead>
                         <tr>
-                            <th>framework</th>
-                            <th>css</th>
-                            <th>min</th>
+                            <th>MYFavorite!</th>
+                            <th>URL</th>
+                            <th>特徴</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Bootstrap4</td>
-                            <td>188<span class="sm">(KB)</span></td>
-                            <td>148<span class="sm">(KB)</span></td>
+                            <td>Yahoo!news  </td>
+                            <td><cite>[ <a href="https://news.yahoo.co.jp/" rel="nofollow" target="_blank">https://news.yahoo.co.jp/</a> ]</cite></td>
+                            <td>時事関連</td>
                         </tr>
                         <tr>
-                            <td>Purecss</td>
-                            <td>32<span class="sm">(KB)</span></td>
-                            <td>17<span class="sm">(KB)</span></td>
+                            <td>livedoor</td>
+                            <td><cite>[ <a href="http://www.livedoor.com/" rel="nofollow" target="_blank">http://www.livedoor.com/</a> ]</cite></td>
+                            <td>時事関連</td>
                         </tr>
                         <tr>
-                            <td>Milligram</td>
-                            <td>10<span class="sm">(KB)</span></td>
-                            <td>8.5<span class="sm">(KB)</span></td>
+                            <td>THE ANSWERS</td>
+                            <td><cite>[ <a href="https://the-ans.jp/tag/%E4%BA%95%E4%B8%8A%E5%B0%9A%E5%BC%A5/" rel="nofollow" target="_blank">https://the-ans.jp/</a> ]</cite></td>
+                            <td class="bg-light"><span class="bold red">井上尚弥</span>関連</td>
                         </tr>
                         <tr>
-                            <td class="bg-light blue bold">Minima!</td>
-                            <td class="bg-light">9.5<span class="sm">(KB)</span></td>
-                            <td class="bg-light red"><span class="bold">5.6</span><span class="sm">(KB)</span></td>
-                        </tr>
-                        <tr>
-                            <td class="green bold">Minima!+ <span class="mid bold sm">(SVG-sprite[SNS]icons+WEB snippets)</span></td>
-                            <td>13<span class="sm">(KB)</span></td>
-                            <td>11<span class="sm">(KB)</span></td>
+                            <td>Full-Count</td>
+                            <td><cite>[ <a href="https://full-count.jp/" rel="nofollow" target="_blank">https://full-count.jp/</a> ]</cite></td>
+                            <td class="bg-light"><span class="bold green">大谷翔平</span>関連</td>
                         </tr>
                     </tbody>
                 </table>
@@ -625,14 +623,14 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
         <div>
             <section class="container" id="layout-css">
                 <h3><span class="green">Minima!+ </span><small class="dark">拡張機能</small></h3>
-                <p class="sm bold">ソーシャルアイコンやタブメニューなど下記拡張機能を実装。</p>
+                <p class="sm bold">ソーシャルアイコンやタブメニューなどを画像劣化の無い最新の保存形式SVGにして、不要なコードのみ取り除いてBase64にエンコード処理を行って、サーバーへのリクエスト回数を圧縮！</p>
             </section>
         </div>
         <div class="bg-light">
             <section class="container" id="icon">
 <!-- 以下コメントアウト解除でSVG要素から読み出すことも可能です。-->
 <!-- 
-                <h3>icon（xlink:SVG）</h3>
+                <h3>icon（xlink:SVG）スプライト処理</h3>
                 <p class="sm bold">外部SVG埋め込み非対応の旧ブラウザは「<a href="https://github.com/Keyamoon/svgxuse" target="_blank">svgxuse.js</a>」を使用する必要があります。</p>
 
                 <div>
@@ -823,7 +821,8 @@ javascriptなしでも機能する多階層ナビゲーションと最新デザ�
                 <h3>Balloon</h3>
                 <p class="sm bold">質疑形式のバルーンレイアウト</p>
                 <div class="balloon-left">
-                    <img class="icon" src="https://placehold.it/80x80?text=minima" />
+                    <!-- <img class="icon" src="https://placehold.it/80x80?text=minima" /> -->
+                    <div class="icon bg-red" style=""></div>
                     <p>
 I'll be your hero
 I'll be your hero
@@ -840,7 +839,8 @@ Just for you, I'll be your hero</p>
                 </div>
 
                 <div class="balloon-right">
-                    <img class="icon" src="https://placehold.it/80" />
+                    <!-- <img class="icon" src="https://placehold.it/80x80?text=minima" /> -->
+                    <div class="icon bg-blue" style=""></div>
                     <p>The reason I can be stronger is because
 
 Someone special always supported me with smiles
@@ -964,15 +964,15 @@ Oh Oh... And you are my hero
                 <h3>Acordion</h3>
                 <p class="sm bold">アコーディオンメニュー</p>
             <div class="accordion">
-              <input checked id="accordion" name="accordion" type="radio"> <label class="p1" for="accordion">ブラウザーサポート<i class="sprite arrow icon-arrow"></i></label>
+              <input checked id="accordion" name="accordion" type="radio"> <label class="p1 red bold" for="accordion">ブラウザーサポート<i class="sprite arrow icon-arrow"></i></label>
               <div class="accordion-painel">
-                <p><span class="mkr_1">IE9+</SPAN>、chrome（最新）、Microsoft Edge（最新）、Safari（最新）、Firefox（最新）、Opera（最新）</p>
-              </div><input id="accordion2" name="accordion" type="radio"> <label class="p1 red bold" for="accordion2">注意事項<i class="sprite arrow icon-arrow"></i></label>
+                <p>Chrome（最新）、Microsoft Edge（最新）、Safari（最新）、Firefox（最新）、Opera（最新）、<span class="mkr_1">IE9+</span></p>
+              </div><input id="accordion2" name="accordion" type="radio"> <label class="p1" for="accordion2">機能<i class="sprite arrow icon-arrow"></i></label>
               <div class="accordion-painel">
-                <p>機能拡張用CSSはアイコンに<span class="bold mkr_2">SVG画像を用いています。</span></p>
+                <p>多機能さを求めるならUIの豊富で活用例の多いBootstrapとかが良いかもだが、機能を限定している分拡張性はユーザーの用途にあわせて拡張できる。Bootstrapの多機能（総容量の重量）さは裏返せばデメリット。おそらく<span class="bold mkr_2">Bootstrapを活用されている90%以上の方はそこまで活用できていない</span>かもしれませんね。</span></p>
               </div><input id="accordion3" name="accordion" type="radio"> <label class="p1" for="accordion3">デザイン<i class="sprite arrow icon-arrow"></i></label>
               <div class="accordion-painel">
-                <p>デザインとソースコードは最小限。</p>
+                <p>機能もデザインも限定的なので、ミニマムでシンプルな美しさは、他のデザインに浮気をしても回帰性傾向が高い為、ユーザーの目に留まりやすくなり、CVRも上昇するなんて可能性あるかもね。</p>
               </div>
             </div>
                 <hr class="clr p2" />
@@ -1074,14 +1074,10 @@ Oh Oh... And you are my hero
         </div>
 
         <div class="container">
-            <h4 class="h2"><span class="mkr2">Installing <span class="blue">Minima!</span></span></h4>
+            <h4 class="h2"><span class="mkr2">Afterword <span class="blue">Minima!</span></span></h4>
             <p class="h5 mb2"><span class="bold">デザイン性を高い水準で維持したままでのコード削減は難儀しました。<br />
-LessやSass等、構造を組み立てていく手法と違ってコードを分解・組立・削除・再構築していく、リバースエンジニアリング手法は、OSそれぞれのデフォルトから分析調査を1行ずつ確認する為、タスクランナーを用いずにテキストエディタでの果てしない手打ちにリソースを割いて制作それにより、通常のサイト構築に使うコードのみ厳選する事で冗長的コードをカット。又、分析した結果、デザインを成型するフレームワーク最適化により大幅にコードを削減。<br />
-更に、一定の水準を終えたコードからも、background:none;があればbackground:0;で3バイト削減したりと1バイトでも削れないかとコードを何重とチェック。もちろん、デザインを高い次元に保つため、OSブラウザ間での差異含めて調整を行っております。</span><br />
-<span class="">（私が気付いていないだけで、ソースコードで短縮できる記述を発見した場合はご連絡もらえると感謝感激です。）</span></p>
-
-
-<p class="h5 mb2 bold"><span class="bold">スケルトン・インフィル。 拡張機能とベースのcssも多様な要望に合わせて切り分けていますが、合算しても17KB以下。50KB制限のあるAMP対応について、javascriptにも依存していませんし、importantも使用していませんので、CSSコードを1000桁追加しても余裕で対策できるでしょう。もし技術的な対応について苦慮している場合は、<span class="bold mkr_3">有償ですが、プラグインなしでAMP機能に対応したWordPressテーマ（付加機能：ソースコード自動圧縮機能とか自在にカスタマイズができる）がそろった上位互換テーマ（\15,000円）あります。ご希望の方は下記よりご連絡下さい。</span></p>
+LessやSass等、構造を組み立てていく手法と違ってコードを分解・組立・削除・再構築していく、リバースエンジニアリング手法は、OSそれぞれのデフォルトから分析調査を1行ずつ確認する為、タスクランナーを用いずにテキストエディタでの果てしない手打ち制作それにより、通常のサイト構築に使うコードのみ厳選する事で冗長的コードをカット。又、分析した結果、デザインを成型するフレームワーク最適化により大幅にコードを削減。<br />
+更に、OSブラウザ間での差異含めて、リセットCSSを読み込まなくても不具合が出ないよう調整の繰り返し。</span></p>
         </div>
         <footer class="container txt-center">
             <p class="text-right sm">Crieited by <a href="https://ymkou.net">kou</a> <a href="https://github.com/yamkou/minima" title="minima github" target='_blank'><i class="inline-block icons github"></i></svg></a></p>
