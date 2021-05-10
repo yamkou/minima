@@ -4,7 +4,7 @@
 
 
 ## Description
-[Minima!]��CSS�~�j�}���t���[�����[�N�ł��B���o�[�X�G���W�j�A�����O��@�ɂ���čŏ����̃R�[�h�Ńn���o�[�K�[���j���[�⃌�X�|���V�u�@�\�ȂǋߔN�̃t���[�����[�N�̃f�U�C�����ŏ����ɗ}���Ă���~�j�}���d�l�̂b�r�r�t���[�����[�N�B
+[Minima!]はCSSミニマムフレームワークです。リバースエンジニアリング手法によって最小限のコードでハンバーガーメニューやレスポンシブ機能など近年のフレームワークのデザインを最小限に抑えてあるミニマム仕様のＣＳＳフレームワーク。
 
 
 ## Browser Support
@@ -17,4 +17,4 @@ This software is released under the MIT License, see LICENSE.txt.
 
 ## Author
 
-[kou](https://ymkou.net/minima/)
+ymkou
