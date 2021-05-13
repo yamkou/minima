@@ -1,8 +1,7 @@
 @charset "utf-8";
 /*
- * minima! 2.0.1
- * https://github.com/yamkou/minima
- * (c) 2019 kou
+ * minima! 2.0.2
+ * https://bit.ly/3eHwrRg  (c) 2021 kou
  * Licensed under the MIT license - https://bit.ly/2FL3Mt8
  */
 
@@ -356,13 +355,13 @@ a, .blue {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -.5em;
-  width: calc(100% + 1em);
+  margin: 0 -.25em;
+  width: calc(100% + .5em);
 }
 
 .row [class*=col] {
   box-sizing: border-box;
-  padding: 0 .5em 1em;
+  padding: 0 .25em .5em;
   width: 100%;
 }
 
